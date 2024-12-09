@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "node-terminal",
+            "name": "Build",
+            "request": "launch",
+            "command": "npm run build",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "node-terminal",
+            "name": "Debug CardJistu",
+            "request": "launch",
+            "command": "npm run dev",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "node-terminal",
+            "name": "Debug Production",
+            "request": "launch",
+            "command": "sh runtime.sh",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

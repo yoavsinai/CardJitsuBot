@@ -1,0 +1,126 @@
+.navbar {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: fixed !important;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--discord-color);
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em 1em;
+    text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+    background-color: var(--hover-color);
+}
+
+.navbar .right {
+    float: right;
+    background-color: var(--glurple);
+}
+
+.prp {
+    float: left;
+    width: 3em;
+    height: 3em;
+    margin-top: 0.25em;
+    margin-bottom: -0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.prp:hover {
+    cursor: pointer;
+}
+
+.wrapper {
+    display: none;
+}
+
+.collapsed {
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .navbar {
+        background-color: var(--dark-discord-color);
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        display: block;
+        color: white;
+        text-align: center;
+    }
+
+    .wrapper button {
+        background-color: transparent;
+        border: none;
+        padding: 1em 1em;
+        color: white;
+    }
+
+    .navbar .show a {
+        display: flex;
+    }
+
+    .navbar li a {
+        display: none;
+    }
+
+    .collapsed {
+        display: block;
+        list-style-type: none;
+        margin-top: 2.8em;
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+        left: 0%;
+        position: fixed;
+        background-color: var(--discord-color);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .collapsed {
+            background-color: var(--dark-discord-color);
+        }
+    }
+
+    .collapsed li a {
+        padding-top: 0.5em;
+        color: white !important;
+        display: block;
+        text-align: center;
+        padding: 1em 1em;
+        text-decoration: none;
+    }
+
+    .collapsed li a:hover:not(.active) {
+        background-color: var(--hover-color);
+    }
+
+    .collapsed .right a {
+        background-color: var(--glurple);
+    }
+}
+
+@media (max-width: 600px) {
+    img {
+        margin-left: -1.5em;
+    }
+}

@@ -1,0 +1,31 @@
+.invite {
+    font-size: 30px;
+    padding-top: 1em;
+    max-width: fit-content;
+}
+
+.inviteBtn {
+    padding: 1em;
+    background-color: var(--discord-color);
+    border-radius: 1em;
+}
+
+.prp {
+    float: right;
+    max-width: 35%;
+    height: auto;
+    margin-left: 1em;
+    top: 180px;
+}
+
+@media (prefer-color-scheme: dark) {
+    .invite {
+        background-color: var(--dark-discord-color);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .invite {
+        font-size: 23px;
+    }
+}

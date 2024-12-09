@@ -1,0 +1,7 @@
+node_modules/
+.github/
+*.d.ts
+dist/
+*.css
+*.html
+*.test.ts
